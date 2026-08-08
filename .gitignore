@@ -1,0 +1,6 @@
+# Arquivo Excel
+clientes_teste.xlsx
+
+# Cache do Python
+__pycache__/
+*.pyc
