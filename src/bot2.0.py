@@ -5,6 +5,7 @@ from urllib.parse import quote
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import pyautogui
 
 print("Navegador abrindo...")
 navegador = webdriver.Chrome()
@@ -18,7 +19,7 @@ print("Conectar com seu whatsapp em 1 minuto!")
 time.sleep(60)
 print("Whatsapp conectado com sucesso!")
 
-arquivo = openpyxl.load_workbook("clientes_teste.xlsx")
+arquivo = openpyxl.load_workbook("clientes_teste1.xlsx")
 aba = arquivo.active
 
 for linha in aba.iter_rows(min_row=2, values_only=True):
